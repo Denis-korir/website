@@ -1,0 +1,47 @@
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DREAMSoccer - Football Kits</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>DREAMSoccer</h1>
+        <nav>
+            <button id="seller-button">Seller</button>
+            <button id="buyer-button">Buyer</button>
+        </nav>
+    </header>
+    <main>
+        <div id="seller-content" style="display: none;">
+            <h2>Welcome, Seller!</h2>
+            <form id="seller-form">
+                <label for="location">Location:</label>
+                <input type="text" id="location" required>
+                <label for="kit-color">Kit Color:</label>
+                <input type="text" id="kit-color" required>
+                <label for="contacts">Contacts:</label>
+                <input type="text" id="contacts" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div id="buyer-content" style="display: none;">
+            <h2>Welcome, Buyer!</h2>
+            <p>Select the football kit you want:</p>
+            <div id="kits-list">
+                <!-- List of available football kits will be dynamically generated here -->
+            </div>
+            <h3>Your Basket:</h3>
+            <ul id="basket">
+                <!-- Selected kits will be dynamically added to the basket here -->
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 DREAMSoccer. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
